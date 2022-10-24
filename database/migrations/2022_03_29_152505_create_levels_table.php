@@ -23,6 +23,7 @@ class CreateLevelsTable extends Migration
             $table->text('deskripsi'); //penjelasan
             $table->unsignedInteger('prioritas')->nullable(); //1 2 3
             $table->boolean('status')->default(1); //status aktif
+            $table->unsignedInteger('tayang')->default(0); //jumlah tayang
             $table->timestamps();
         });
     }

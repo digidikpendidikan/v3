@@ -29,6 +29,7 @@ class CreateSubjectsTable extends Migration
             $table->text('durasi')->nullable(); //durasi video
             $table->unsignedInteger('prioritas')->nullable(); //1 2 3
             $table->boolean('status')->default(1); //status aktif
+            $table->unsignedInteger('tayang')->default(0); //jumlah tayang
             $table->timestamps();
             $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
         });

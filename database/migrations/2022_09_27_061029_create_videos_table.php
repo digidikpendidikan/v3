@@ -27,6 +27,7 @@ class CreateVideosTable extends Migration
             $table->text('penjelasan')->nullable(); //isi penjelasan
             $table->text('modul')->nullable(); //link modul
             $table->unsignedInteger('suka')->default(0); //jumlah suka
+            $table->unsignedInteger('tayang')->default(0); //jumlah tayang
             $table->boolean('status')->default(1); //status aktif
             $table->timestamps();
             $table->foreign('chapter_id')->references('id')->on('chapters')->onDelete('cascade');

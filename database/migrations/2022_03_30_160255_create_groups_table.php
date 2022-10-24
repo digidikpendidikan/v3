@@ -23,6 +23,7 @@ class CreateGroupsTable extends Migration
             $table->string('slug'); //x
             $table->unsignedInteger('prioritas')->nullable(); //1 2 3
             $table->boolean('status')->default(1); //status aktif
+            $table->unsignedInteger('tayang')->default(0); //jumlah tayang
             $table->timestamps();
             $table->foreign('level_id')->references('id')->on('levels')->onDelete('cascade');
         });

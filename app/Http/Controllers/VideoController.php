@@ -35,6 +35,7 @@ class VideoController extends Controller
             $level=Level::select('id','nama')->where('slug',$slug)->first();
             $level_id=$level->id;
             $group = Group::orderBy('prioritas','asc')->where('level_id',$level_id)->where('status','1')->get();
+            Level::where('id', $level_id)->increment('tayang', 1);
             return view('video.level', compact('group','level'));
         }
     }
@@ -73,6 +74,8 @@ class VideoController extends Controller
                 else{
                     $subject=Subject::where('id',$subject_id)->first();
                     $chapter = Chapter::orderBy('prioritas','asc')->where('subject_id',$subject_id)->where('status','1')->get();
+                    Group::where('id', $group_id)->increment('tayang', 1);
+                    Subject::where('id', $subject_id)->increment('tayang', 1);
                     return view('video.subject', compact('subject','chapter'));
                 }
             }
@@ -131,7 +134,8 @@ class VideoController extends Controller
                             }else{
                                 $ditandai=0;
                             }
-
+                            Chapter::where('id', $chapter_id)->increment('tayang', 1);
+                            Video::where('id', $video_id)->increment('tayang', 1);
                             return view('video.lesson', compact('video','chapter','subject','prev','next','prevchapter','nextchapter','ditandai'));
                         }
 
