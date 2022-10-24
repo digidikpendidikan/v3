@@ -311,14 +311,14 @@
                                     </div>
                                     <!--end::Title-->
                                     <!--begin::Description-->
-                                    <p class="fs-4 fw-bold">Selamat datang admin Digidik!</p>
-                                    <p class="fs-4 fw-bold mb-10">Klik menu di samping untuk menjelajahi berbagai fitur admin Digidik.</p>
+                                    <p class="fs-4 fw-bold">Selamat Datang Pelajar Hebat!</p>
+                                    <p class="fs-4 fw-bold mb-10">Klik menu di samping untuk menjelajahi berbagai fitur belajar menyenangkan bersama Digidik. 100% Gratis.</p>
                                     <!--end::Description-->
                                 </div>
                                 <!--end::Container-->
                                 <!--begin::Illustration-->
                                 <div class="text-center px-4">
-                                    <img class="mw-100 mh-300px" alt="" src="{{asset('media/illustrations/digidik-in-smartphone.png')}}" />
+                                    <img class="mw-100 mh-300px" alt="" src="{{asset('media/illustrations/reminder.png')}}" />
                                 </div>
                                 <!--end::Illustration-->
                             </div>
