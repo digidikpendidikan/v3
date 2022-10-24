@@ -1,0 +1,111 @@
+/*!
+ * Dark Mode Switch v1.0.1 (https://github.com/coliff/dark-mode-switch)
+ * Copyright 2021 C.Oliff
+ * Licensed under MIT (https://github.com/coliff/dark-mode-switch/blob/main/LICENSE)
+ */
+
+[data-theme="dark"] {
+    background-color: #171717 !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #fff !important;
+}
+
+[data-theme="dark"] .bg-dark {
+    background-color: #eee !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #222 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #423F3E !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: #423F3E !important;
+    color: #eee;
+}
+
+[data-theme="dark"] #kt_drawer_chat_messenger_body {
+    background-color: #423F3E !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .aside {
+    background-color: #0f0f0f !important;
+    box-shadow: none !important;
+}
+
+[data-theme="dark"] .text-gray-800 {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .col-form-label {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: #fff !important;
+}
+
+[data-theme="dark"] a {
+    color: #FF0000 !important;
+}
+
+[data-theme="dark"] .btn-primary {
+    color: #fff !important;
+}
+
+[data-theme="dark"] .btn-danger {
+    color: #fff !important;
+    background-color: #B91646 !important;
+}
+
+[data-theme="dark"] .card-footer {
+    border-top: 1px solid #242424 !important;
+}
+
+[data-theme="dark"] .nav-tabs .nav-link {
+    border: 1px solid #fff !important;
+}
+
+[data-theme="dark"] .nav-tabs .nav-link.active {
+    color: white !important;
+}
+
+[data-theme="dark"] .header {
+    background-color: #171717 !important;
+    color: #eee;
+}
+
+ .wave {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+  }
+
+  [data-theme="dark"] .wave:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+  }
+  [data-theme="dark"] .wave:after {
+    content: " ";
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    bottom: 65%;
+    left: -250px;
+    border-radius: 35%;
+    background: black;
+    z-index: 0;
+  }
