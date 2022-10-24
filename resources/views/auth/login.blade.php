@@ -24,9 +24,8 @@
 @endsection
 
 @section('content')
-<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-6">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -85,6 +84,13 @@
                         </div>
                     </form>
         </div>
+<hr>
+        <div class="col-md-12 mt-6">
+            <h2>Belum Punya Akun?</h2>
+            <p>Ayo buat dulu akunnya, klik tombol di bawah ini.</p>
+            <a href="{{ route('register') }}"><button class="btn btn-primary">
+                Buat Akun Digidik
+            </button></a>
+        </div>
     </div>
-</div>
 @endsection

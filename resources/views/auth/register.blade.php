@@ -34,7 +34,7 @@
 
 @section('content')
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-12 mb-6">
   
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -122,6 +122,14 @@
                             </div>
                         </div>
                     </form>
+        </div>
+<hr>
+        <div class="col-md-12 mt-6">
+            <h2>Sudah Punya Akun?</h2>
+            <p>Kalau sudah punya akun tinggal login ya, klik tombol di bawah ini.</p>
+            <a href="{{ route('login') }}"><button class="btn btn-primary">
+               Login Digidik
+            </button></a>
         </div>
     </div>
 @endsection
