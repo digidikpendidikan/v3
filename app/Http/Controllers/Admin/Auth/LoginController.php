@@ -41,6 +41,31 @@ class LoginController extends Controller
             'password'=>'required',
         ]);
         if (auth()->guard('adminMiddle')->attempt(['email'=>$request->email,'password'=>$request->password])){
+            $headers = [
+                'Content-Type' => 'application/json',
+                'AccessToken' => 'key',
+                'Authorization' => 'Bearer dk_afbb5015742341b69c755d3a4d8fc126',
+            ];
+            $client = new Client([
+                'base_uri' => 'http://103.179.87.147:3001',
+                'headers' => $headers,
+                // default timeout 5 detik
+                'timeout'  => 5,
+            ]);
+             
+            $response = $client->request('POST', '/api/v1/messages', [
+                'json' => [
+                    "recipient_type" => "individual", 
+                    "to" => "6281322273798", 
+                    "type": "text",
+                    "text": {
+                        "body": "Admin ".$request->email." login ke sistem."
+                    }
+                ]
+            ]);
+            $body = $response->getBody();
+            $body_array = json_decode($body);
+            // print_r($body_array);
             return redirect('/admin/')->with('success','Selamat , Kamu Berhasil Login di Digidik!');
         } else{
             return back()->with('error','Email atau Password Salah!');
