@@ -57,10 +57,10 @@ class LoginController extends Controller
                 'json' => [
                     "recipient_type" => "individual", 
                     "to" => "6281322273798", 
-                    "type": "text",
-                    "text": {
-                        "body": "Admin ".$request->email." login ke sistem."
-                    }
+                    "type"=> "text",
+                    "text"=> [
+                        "body"=> "Admin ".$request->email." login ke sistem."
+                    ]
                 ]
             ]);
             $body = $response->getBody();
