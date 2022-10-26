@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use App\Models\Admin;
+use GuzzleHttp\Client;
 
 class LoginController extends Controller
 {
