@@ -82,8 +82,6 @@ class VideoController extends Controller
                 'deskripsi' => ['required'],
                 'pengajar' => ['required'],
                 'prioritas' => ['required'],
-                'penjelasan' => ['required'],
-                'modul' => ['required'],
                 'status' => ['required'],
                 'icon' => ['mimes:jpg,png'],
             ]);
@@ -108,8 +106,6 @@ class VideoController extends Controller
                     'deskripsi' => ['required'],
                     'pengajar' => ['required'],
                     'prioritas' => ['required'],
-                    'penjelasan' => ['required'],
-                    'modul' => ['required'],
                     'status' => ['required'],
                     'icon' => ['mimes:jpg,png'],
                     'slug' => ['required'],

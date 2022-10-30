@@ -114,7 +114,7 @@
                                         <span class="text-muted font-weight-bold">@if($data->status==1)Aktif @else Tidak Aktif @endif</span>
                                     </td>
                                     <td class="text-right pr-0">
-                                        <a href="{{route('admin.video.chapter.edit',$data->id)}}" class="btn btn-icon btn-light btn-sm">
+                                        <a href="{{route('admin.video.lesson.edit',$data->id)}}" class="btn btn-icon btn-light btn-sm">
                                             <span class="svg-icon svg-icon-md svg-icon-success"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\legacy\metronic\theme\html\demo3\dist/../src/media/svg/icons\Design\Edit.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                     <rect x="0" y="0" width="24" height="24"/>

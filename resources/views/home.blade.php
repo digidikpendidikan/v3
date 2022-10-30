@@ -32,6 +32,28 @@
             <!--begin::Body-->
             <div class="card-body d-flex align-items-center pt-3 pb-0">
                 <div class="d-flex flex-column flex-grow-1 py-2 py-lg-13 me-2">
+                    <h2><a href="#" class="fw-bolder text-dark fs-4 mb-2 text-hover-primary">Grup Telegram</a></h2>
+                    <span class="fw-bold text-muted fs-5">Ayo Gabung Grup untuk Dapatkan Info Program Terbaru</span>
+                </div>
+                <img src="{{asset('media/icons/telegram.png')}}" alt="" class="align-self-end h-100px" />
+            </div>
+            <div class="card-footer py-1 px-1">
+                <a href="https://t.me/pelajardigidik" target="_blank" class="btn btn-danger w-100 d-flex justify-content-between align-items-center">
+                    <span><img src="{{asset('media/icons/click.gif')}}" alt="" class="align-self-end" width="30px" height="30px" /></span>
+                    <span>Gabung Grup Telegram</span>
+                    <span></span>
+                </a>
+            </div>
+            <!--end::Body-->
+        </div>
+        <!--end::Statistics Widget 2-->
+    </div>
+    <div class="col-xl-4">
+        <!--begin::Statistics Widget 2-->
+        <div class="card card-xl-stretch mb-xl-8">
+            <!--begin::Body-->
+            <div class="card-body d-flex align-items-center pt-3 pb-0">
+                <div class="d-flex flex-column flex-grow-1 py-2 py-lg-13 me-2">
                     <h2><a href="#" class="fw-bolder text-dark fs-4 mb-2 text-hover-primary">Video Belajar</a></h2>
                     <span class="fw-bold text-muted fs-5">Ayo Belajar Melalui Video Pembelajaran Gratis</span>
                 </div>
@@ -70,6 +92,9 @@
         </div>
         <!--end::Statistics Widget 2-->
     </div>
+   
+</div>
+<div class="row g-5 g-xl-8">
     <div class="col-xl-4">
         <!--begin::Statistics Widget 2-->
         <div class="card card-xl-stretch mb-5 mb-xl-8">
@@ -92,8 +117,6 @@
         </div>
         <!--end::Statistics Widget 2-->
     </div>
-</div>
-<div class="row g-5 g-xl-8">
     <div class="col-xl-4">
         <!--begin::Statistics Widget 2-->
         <div class="card card-xl-stretch mb-xl-8">
@@ -138,6 +161,9 @@
         </div>
         <!--end::Statistics Widget 2-->
     </div>
+    
+</div>
+<div class="row g-5 g-xl-8">
     <div class="col-xl-4">
         <!--begin::Statistics Widget 2-->
         <div class="card card-xl-stretch mb-5 mb-xl-8">
@@ -160,8 +186,6 @@
         </div>
         <!--end::Statistics Widget 2-->
     </div>
-</div>
-<div class="row g-5 g-xl-8">
     <div class="col-xl-4">
         <!--begin::Statistics Widget 2-->
         <div class="card card-xl-stretch mb-xl-8">
