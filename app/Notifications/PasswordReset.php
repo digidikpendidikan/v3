@@ -42,7 +42,7 @@ class PasswordReset extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->line('Kamu mendapat email ini karena meminta untuk melakukan reset password akun kamu.') // Here are the lines you can safely override
+            ->line('Kamu mendapat email ini karena meminta untuk melakukan reset password akun kamu. Klik tombol di bawah ini, email ini berlaku 60 menit saja.') // Here are the lines you can safely override
             ->action('Reset Password', url('password/reset', $this->token))
             ->line('Jika kamu tidak meminta reset password, abaikan saja email ini.');
     }
