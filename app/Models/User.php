@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Notifications\PasswordReset;
 
 class User extends Authenticatable
 {
@@ -55,5 +56,10 @@ class User extends Authenticatable
 
     public function videotag() {
         return $this->hasMany(Videotag::class, 'video_id', 'id');
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new PasswordReset($token));
     }
 }
