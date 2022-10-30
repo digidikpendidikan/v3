@@ -25,6 +25,10 @@
 
 @section('content')
 
+<div class="alert alert-warning" role="alert">
+	<b>Jumlah Pelajar Digidik: {{$usercount}} Pelajar Website, 3.740 Pelajar Telegram
+</div>
+
 <div class="row g-5 g-xl-8">
     <div class="col-xl-4">
         <!--begin::Statistics Widget 2-->
