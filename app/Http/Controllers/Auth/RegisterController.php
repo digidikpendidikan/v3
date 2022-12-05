@@ -72,10 +72,10 @@ class RegisterController extends Controller
         $headers = [
             'Content-Type' => 'application/json',
             'AccessToken' => 'key',
-            'Authorization' => 'Bearer dk_afbb5015742341b69c755d3a4d8fc126',
+            'Authorization' => 'Bearer dk_0e41cc354357479d8c35ae24c5e14ba3',
         ];
         $client = new Client([
-            'base_uri' => 'http://103.179.87.147:3001',
+            'base_uri' => 'http://103.179.87.147:3002',
             'headers' => $headers,
             // default timeout 5 detik
             'timeout'  => 5,
