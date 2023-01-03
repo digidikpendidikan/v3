@@ -117,8 +117,8 @@ class VideoController extends Controller
                         else{
                             $video_id=$videocek->id;
                             $video=Video::where('id',$video_id)->first();
-                            $prev = Video::where('chapter_id',$chapter_id)->where('prioritas', '<', $video->prioritas)->max('prioritas');
-                            $next = Video::where('chapter_id',$chapter_id)->where('prioritas', '>', $video->prioritas)->min('prioritas');
+                            $prev = Video::where('chapter_id',$chapter_id)->where('status','1')->where('prioritas', '<', $video->prioritas)->max('prioritas');
+                            $next = Video::where('chapter_id',$chapter_id)->where('status','1')->where('prioritas', '>', $video->prioritas)->min('prioritas');
                             
                             $data2=Chapter::where('id',$chapter_id)->first();
                             $prevchapter_id = Chapter::where('subject_id',$subject_id)->where('prioritas', '<', $data2->prioritas)->max('prioritas');
@@ -148,7 +148,7 @@ class VideoController extends Controller
 
     public function navigation($chapter, $priority)
     {
-        $video=Video::where('chapter_id',$chapter)->where('prioritas',$priority)->where('status','1')->first();
+        $video=Video::where('chapter_id',$chapter)->where('prioritas',$priority)->first();
         return redirect()->route('video.lesson',[$video->chapter->subject->group->level->slug, $video->chapter->subject->group->slug, $video->chapter->subject->slug, $video->chapter->slug, $video->slug]);
     }
 
