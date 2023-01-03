@@ -102,7 +102,7 @@ href="{{route('video.subject',[$video->chapter->subject->group->level->slug,$vid
         <div class="pt-3">
             <!--begin::Video-->
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item rounded" src="{{$video->video}}?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
+                <iframe class="embed-responsive-item rounded" src="{{$video->video}}?autoplay=1" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>
             </div>
             <!--end::Video-->
             <!--begin::Text-->

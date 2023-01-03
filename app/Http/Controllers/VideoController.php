@@ -148,7 +148,7 @@ class VideoController extends Controller
 
     public function navigation($chapter, $priority)
     {
-        $video=Video::where('chapter_id',$chapter)->where('prioritas',$priority)->first();
+        $video=Video::where('chapter_id',$chapter)->where('status','1')->where('prioritas',$priority)->first();
         return redirect()->route('video.lesson',[$video->chapter->subject->group->level->slug, $video->chapter->subject->group->slug, $video->chapter->subject->slug, $video->chapter->slug, $video->slug]);
     }
 

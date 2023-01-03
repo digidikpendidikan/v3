@@ -109,7 +109,7 @@ Mohon maaf, belum ada konten pada mata pelajaran ini.
         <div id="collapseOne6" class="collapse show" data-parent="#accordionExample6">
             <div class="card-body">
                 <p>{{$data->deskripsi}}</p>
-                @foreach($data->video->sortBy('prioritas') as $data2)
+                @foreach($data->video->where('status','1')->sortBy('prioritas') as $data2)
                 <!--begin::Item-->
                 <a href="{{route('video.lesson',[$data2->chapter->subject->group->level->slug,$data2->chapter->subject->group->slug,$data2->chapter->subject->slug,$data2->chapter->slug,$data2->slug])}}" class="d-flex flex-wrap align-items-center mb-6 bg-light rounded p-2">
                     <!--begin::Symbol-->
