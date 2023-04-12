@@ -84,7 +84,7 @@ class LoginController extends Controller
                             "body" => [
                                     "type" => "text", 
                                     "parameter" => [
-                                        "value" => "1. Selamat ".$data['name'].", kamu telah login di website Digidik - Bimbel Online Gratis dengan username ".$data['username'].".\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
+                                        "value" => "1. Selamat ".Auth::user()->username.", kamu telah login di website Digidik - Bimbel Online Gratis dengan username ".Auth::user()->username.".\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
                                     ] 
                                 ], 
                             "action" => [
