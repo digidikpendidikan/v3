@@ -104,7 +104,7 @@ class RegisterController extends Controller
                                         [
                                             "type" => "link", 
                                             "parameter" => [
-                                                "title" => "Website Digidik", 
+                                                "title" => "Link Penting Digidik", 
                                                 "value" => "https://blog.digidik.id/link" 
                                             ] 
                                         ], 
