@@ -71,7 +71,7 @@ class LoginController extends Controller
             $response = $client->request('POST', '/api/v1/messages', [
                 'json' => [
                     "recipient_type" => "individual", 
-                    "to" => $data['hp'], 
+                    "to" => Auth::user()->hp, 
                     "type" => "interactive_dev", 
                     "interactive_dev" => [
                             "header" => [
