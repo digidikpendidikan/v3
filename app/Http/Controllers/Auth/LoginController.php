@@ -60,7 +60,7 @@ class LoginController extends Controller
             $headers = [
                 'Content-Type' => 'application/json',
                 'AccessToken' => 'key',
-                'Authorization' => 'Bearer dk_0e41cc354357479d8c35ae24c5e14ba3',
+                'Authorization' => 'Bearer dk_8f545b4861354d7bada765d332099ce2',
             ];
             $client = new Client([
                 'base_uri' => 'http://210.16.65.111:3001',
