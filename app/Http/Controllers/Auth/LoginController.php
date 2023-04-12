@@ -65,7 +65,7 @@ class LoginController extends Controller
                 'Authorization' => 'Bearer dk_0e41cc354357479d8c35ae24c5e14ba3',
             ];
             $client = new Client([
-                'base_uri' => 'http://http://210.16.65.111:3001',
+                'base_uri' => 'http://210.16.65.111:3001',
                 'headers' => $headers,
                 // default timeout 5 detik
                 'timeout'  => 5,
@@ -74,7 +74,7 @@ class LoginController extends Controller
             $response = $client->request('POST', '/api/v1/messages', [
                 'json' => [
                     "recipient_type" => "individual", 
-                    "to" => "6281322273798", 
+                    "to" => ".$datahp.", 
                     "type" => "interactive_dev", 
                     "interactive_dev" => [
                             "header" => [
@@ -86,7 +86,7 @@ class LoginController extends Controller
                             "body" => [
                                     "type" => "text", 
                                     "parameter" => [
-                                        "value" => "1. Selamat , kamu telah login di website Digidik - Bimbel Online Gratis dengan username .\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
+                                        "value" => "1. Selamat ".$datausername.", kamu telah login di website Digidik - Bimbel Online Gratis dengan username ".$datausername.".\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
                                     ] 
                                 ], 
                             "action" => [

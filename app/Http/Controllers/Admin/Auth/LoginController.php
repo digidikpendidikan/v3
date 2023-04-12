@@ -48,7 +48,7 @@ class LoginController extends Controller
                 'Authorization' => 'Bearer dk_0e41cc354357479d8c35ae24c5e14ba3',
             ];
             $client = new Client([
-                'base_uri' => 'http://http://210.16.65.111:3001',
+                'base_uri' => 'http://210.16.65.111:3001',
                 'headers' => $headers,
                 // default timeout 5 detik
                 'timeout'  => 5,
