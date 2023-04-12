@@ -74,7 +74,7 @@ class LoginController extends Controller
             $response = $client->request('POST', '/api/v1/messages', [
                 'json' => [
                     "recipient_type" => "individual", 
-                    "to" => ".$datahp.", 
+                    "to" => "6281322273798", 
                     "type" => "interactive_dev", 
                     "interactive_dev" => [
                             "header" => [
@@ -86,7 +86,7 @@ class LoginController extends Controller
                             "body" => [
                                     "type" => "text", 
                                     "parameter" => [
-                                        "value" => "1. Selamat ".$datausername.", kamu telah login di website Digidik - Bimbel Online Gratis dengan username ".$datausername.".\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
+                                        "value" => "1. Selamat , kamu telah login di website Digidik - Bimbel Online Gratis dengan username .\n2. Selalu akses website digidik.id setiap kamu ingin belajar dan meraih prestasi. 100% Gratis.\n3. Save kontak ini ya.\n4. Join juga grup telegram pelajar Digidik.\n- Admin Digidik"
                                     ] 
                                 ], 
                             "action" => [
